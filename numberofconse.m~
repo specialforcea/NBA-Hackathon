@@ -1,0 +1,3 @@
+function y = numberofconse(n)
+if n<29
+    y = nchoosek(82,n) - (
