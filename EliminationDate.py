@@ -19,7 +19,7 @@ def Find_EDate(team,dates,matches,daily_scores,daily_rank_board):
 		for i in range(1,Num_of_dates):
 			date = dates[Num_of_dates-i]
 			BF_Rank = Best_Final_Rank(team,date,dates,matches,daily_scores,daily_rank_board)
-			#print BF_Rank[team]
+			print BF_Rank[team]
 			if BF_Rank[team] < 9:
 				return date
 			elif i == Num_of_dates-1:
@@ -156,6 +156,8 @@ def Rank(Best_score):
 for teami in teams:
 	print teami
 	print (EliminationDate(teami,dates,matches,daily_scores_east,daily_scores_west,daily_rank_board_east,daily_rank_board_west))
+
+
 
 
 
